@@ -1,0 +1,335 @@
+/*----------------------------------
+		Commone Style
+-----------------------------------*/
+/*----------------------------------
+main color: #1F9884;
+paragraphs color: #464646;
+gary color: ;
+background-image: linear-gradient(to right, #CC18BC , #FF8340);
+----------------------------------*/
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+@font-face{
+	font-family: Tajawal-Bold;
+	src: url('../fonts/Tajawal-Bold.ttf');
+}
+@font-face{
+	font-family: Tajawal-Regular;
+	src: url('../fonts/Tajawal-Regular.ttf');
+}
+html{
+	direction: rtl;
+	scroll-behavior: smooth;
+}
+body{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Tajawal-Regular;
+	font-size:16px;
+}
+section{
+	margin-top: 45px;
+	padding-top: 2em
+}
+.main-color{
+	color: #1F9884
+}
+.btn-success{
+	background: linear-gradient(to right, #1F9884 ,#47DBC2);
+	border-radius: 25px;
+	border: none;
+}
+.btn-success:hover{
+	background: #1F9884;
+	transition: 0.2s
+}
+.number{
+	color: #1F9884
+}
+/*---------------------------------
+		Header & Navbar
+----------------------------------*/
+.main-nav .navbar-nav .nav-item{
+	padding-left: 1em
+}
+.main-nav .form-inline{
+	padding-left: 5em
+}
+.main-nav .navbar-nav .nav-link{
+	color: #231E1E;
+	font-family: Tajawal-Bold
+}
+.main-nav.navbar.navbar-expand-md.fixed-top.bg-light{
+    box-shadow: 0 1px 2px 2px rgba(151, 151, 151, 0.2);
+}
+.main-nav .navbar-nav .active > .nav-link,
+.main-nav .navbar-nav .nav-link:hover, 
+.main-nav .navbar-nav .nav-link:focus{
+	color: #1F9884
+}
+
+/*---------------------------------
+		Slider
+----------------------------------*/
+.main-slider .carousel-item{
+	background-color: #F9F9F9
+}
+.slider-caption h2, 
+.slider-caption p{
+	text-align: right;
+	font-weight: bold;
+}
+.slider-img{
+	width: 500px;
+	height: 500px;
+}
+.main-slider .slider-img img{
+	width: 100%;
+}
+.carousel-indicators li{
+	background-color: #464646
+}
+.carousel-indicators li.active{
+	background-color: #1F9884
+}
+
+/*---------------------------------
+		About Section
+----------------------------------*/
+.about-text{
+	padding-right: 5em
+}
+.about-heading{
+	font-weight: bold;
+}
+.about-heading, .about_description{
+	padding-left: 8em;
+	text-align: right;
+}
+.about .btn-success{
+	margin-left: 8em
+}
+.about-img {
+	background-image: url('../imgs/about_overlay.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+/* -----------------------------
+services
+----------------------------- */
+.card{
+	border:none;
+}
+.slickCard .card i{
+    font-size: 3em;
+	padding-top: 1em;
+	
+}
+.slickCard .card:hover{ 
+background-color:#1F9884;
+margin:0;
+}
+.slick-slide{
+	height:auto;
+}
+
+
+.clr-gry.slick-arrow {
+	position: absolute;
+	top: 105%;
+	
+}
+.fa-angle-left.clr-gry {
+	background: linear-gradient(to right, #1F9884 ,#47DBC2);
+	border-radius:100%;
+	color: #fff;
+	padding: 7px;
+	border: none;
+	
+	
+}
+
+.fa-angle-right.clr-gry {
+	padding:7px;
+	background: linear-gradient(to right, #1F9884 ,#47DBC2);
+	margin-right: 30px;
+	border-radius:100%;
+	color: #fff;
+	border: none;
+}
+
+/*---------------------------------
+		projects
+----------------------------------*/
+.card.Project .card-body {
+    padding: 0;
+}
+.card.Project .card-body .card-title{
+	font-family: Tajawal-Bold;
+	/* padding-right: 13em; */
+}
+.card.Project .card-body .card-text{
+	/* padding-right: 15em; */
+}
+.card-columns .card.Project{
+	position: relative;
+}
+/* .card:hover{
+	
+} */
+.overlay {
+	position: absolute; 
+	bottom: 0; 
+	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+	/* width: 100%;*/
+	transition: .5s ease;
+	opacity:0;
+	color: white;
+	font-size: 20px;
+	padding: 30px;
+  } 
+  .card.Project:hover .overlay {
+	opacity: 1;
+	}
+.card-columns {
+	@include media-breakpoint-only(lg) {
+	  column-count: 4;
+	}
+	@include media-breakpoint-only(xl) {
+	  column-count: 5;
+	}
+	}
+
+/*---------------------------------
+	achievements counter
+----------------------------------*/
+	.counters {
+		background: #1F9884;
+		color: #fff;
+		padding: 40px 20px;
+		border-top: 3px lightskyblue solid;
+	}
+	
+	.counters .container {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 30px;
+		text-align: center;
+	}
+	.counter{
+		color: black;
+	}
+	.counters i {
+		/* color: lightskyblue; */
+		margin-bottom: 5px;
+	}
+	
+	.counters .counter {
+		font-size: 45px;
+		margin: 10px 0;
+	}
+	
+	@media (max-width: 700px) {
+		.counters .container {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	
+		.counters .container > div:nth-of-type(1),
+		.counters .container > div:nth-of-type(2) {
+			border-bottom: 1px lightskyblue solid;
+			padding-bottom: 20px;
+		}
+	}
+
+
+/*---------------------------------
+		testimonials 
+----------------------------------*/
+
+.fa-chevron-left,.fa-chevron-right{
+	color: darkgray;
+	font-size: 3em;
+	margin-bottom: 3em;
+}
+
+/* ----rating--------- */
+.rating { 
+	border: none;
+	float: left;
+  }
+  
+  .rating > input { display: none; } 
+  .rating > label:before { 
+	margin: 5px;
+	font-size: 1.25em;
+	font-family: FontAwesome;
+	display: inline-block;
+	content: "\f005";
+  }
+  
+  .rating > .half:before { 
+	content: "\f089";
+	position: absolute;
+  }
+  
+  .rating > label { 
+	color: #ddd; 
+   float: right; 
+  }
+  
+  /***** CSS Magic to Highlight Stars on Hover *****/
+  
+  .rating > input:checked ~ label, /* show gold star when clicked */
+  .rating:not(:checked) > label:hover, /* hover current star */
+  .rating:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+  
+  .rating > input:checked + label:hover, /* hover current star when changing rating */
+  .rating > input:checked ~ label:hover,
+  .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+  .rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
+
+/*---------------------------------
+		footer
+----------------------------------*/
+
+
+footer{
+	background-color: #1F9884
+}
+.container .row .col-sm-12 .form-group textarea{
+	resize: none;
+}
+.container .row .col-sm-12 .form-group button{
+	background-color: white;
+	color: #1F9884;
+}
+.container .row .col-sm-12 ul{
+list-style: none;
+}
+.container .row .col-sm-12 ul li a{
+	color: white;
+	}
+	
+
+
+	/* Extra small devices (portrait phones, less than 576px) */
+ /* No media query for `xs` since this is the default in Bootstrap */
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+	.card-columns {
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 2;
+	}
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  }
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
