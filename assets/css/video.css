@@ -1,0 +1,140 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+.w3-content{
+    max-width:1600px
+}
+
+.w3-sidebar{
+    z-index:3;
+    width:230px;
+}
+.fa-sign-out{
+    margin-top: 220%;
+}
+.w3-main{
+    margin-left:15pc; 
+    background-color: white; 
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.center {
+    display: block;
+    margin-left:35%;
+    margin-right: auto;
+    width: 1100px;
+    height: 720px;
+    margin-top: -50px;
+  }
+  .btn {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    margin-right: 110px;
+    margin-top: 650px;
+  }
+  .fa-times-circle-o{
+    font-size: 40px;
+    /* margin-left:70px; */
+    display: inline;
+    position: absolute;
+   /* margin:1em; */
+    top: 2em;
+    left:7em;
+  }
+  #overlay {
+    position: relative;
+     /* position: fixed; */
+    /* display: none; */
+    /* width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    /* background-color: rgba(0,0,0,0.5); */
+    /* z-index: 2; */
+    text-align: center;
+    cursor: pointer; 
+  }
+  #text{
+     position: absolute;
+   /* top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%); */
+  }
+/* ===================================top header=============================================== */
+  .notifier {
+    position: relative;
+    display: inline-block;
+    /* float: right; */
+  }
+  .bell {
+    font-size: 26px;
+    color: #1A7A91;
+    transition: 0.3s;
+    padding: 5px;
+  }
+  
+  
+  .badge {
+    position: absolute;
+    top: 11px;
+    left: 17px;
+    padding: 0 5px;
+    font-size: 16px;
+    line-height: 22px;
+    height: 22px;
+    background: #EF476F;
+    color: #FFF;
+    border-radius: 11px;
+    white-space: nowrap;
+  }
+  
+  .notifier.green .badge {
+    /* background: #06D6A0; */
+  }
+  
+  
+  .notifier.new .badge {
+    animation: pulse 2s ease-out;
+    animation-iteration-count: infinite;
+  }
+  /* ===================================end top header=============================================== */
+
+
+  .w3-col{
+
+  }
+
+  main.content section{
+    color: #000;
+    background: #fff;
+    /* border-radius: 20px; */
+    /* min-height: 620px;
+    max-height: 620px; */
+    /* height: auto; */
+    /* top: 50px; */
+    overflow: hidden;
+    /* position: fixed; */
+    /* width:50em ; */
+    /* text-align: center; */
+   }
+   img{
+     position: relative;
+     /* left: 10em; */
+     text-align: center;
+   }
+   button.btn{
+     position: absolute;
+     right:7em;
+     top: 30em;
+   }
+ 
